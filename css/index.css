@@ -76,13 +76,13 @@ html, body {
   display:none;
 }
 
-.header a.logo {
+/* .header a.logo {
   font-size: 25px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   opacity: 0;
   flex-grow:10;
-}
+} */
 
 .toggle-theme-asset {
   transition: all 0.2s ease-in-out;
@@ -162,9 +162,7 @@ html, body {
     .dropdown-navbar {
       margin-top:48px;
     }
-    .sbttl {
-      font-size: 25px !important;
-    }
+
 
     .txt {
       font-size: 30px !important;
@@ -253,11 +251,11 @@ text-decoration:none;}
 }
 
 .main {
-  background-color: rgb(0, 131, 144);
+  background-color: white;
   width:94%;
   margin-left: 3%;
   margin-right: 3%;
-  height:3000px;
+  /* height:3000px; */
   position:relative;
   margin-top:95vh;
 }

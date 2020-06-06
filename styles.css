@@ -4,6 +4,10 @@
   height:auto;
 }
 
+a.logo {
+  width:50% !important;
+}
+
 * {
   margin:0px;
   padding:0px;
@@ -44,10 +48,9 @@
 .main {
   z-index:5;
   position:absolute;
-  background-color: black;
-  height:2000px;
+  /* height:2000px; */
   /* top:100%; */
-  width:100%;
+  /* width:100%; */
 }
 .title {
   text-align:center;
@@ -261,18 +264,9 @@ article {
   margin:0 auto;
   position:relative;
 }
-ul {
-  display:flex;
-  top:0px;
-  z-index:10;
-  padding-bottom:14px;
-}
 li {
-  list-style:none;
-  flex:1;
-}
-li:last-child {
-  border-right:1px solid #DDD;
+  text-align: left;
+  margin-left:10px;
 }
 button {
   width:100%;
