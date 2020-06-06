@@ -133,9 +133,6 @@ html, body {
         /* display:block !important; */
         text-align: center !important;
     }
-    .header {
-        height:48px;
-    }
 
     .sep {
     colspan:2;
