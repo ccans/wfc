@@ -5,6 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
 .header2 {
   z-index:-2;
@@ -93,7 +96,19 @@ body{
 }
 
 .sbttl {
-  text-align: left;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-weight: 600;
   margin-left:5px;
-  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 2px;
+  color:white;
+}
+
+.sbttl2 {
+  text-align: center;
+  /* margin-left:5px; */
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(94, 94, 94);
+  font-weight: 100;
+  background-color: white;
 }

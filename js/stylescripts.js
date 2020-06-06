@@ -26,9 +26,27 @@ function dropDown() {
     }
 }
 
+
+
+
+
+
+
 window.onload = function() {
     $('.titleText').fadeIn(1000);
 };
+
+$(function(){
+  $(window).scroll(function(){
+    console.log("ok");
+    var aTop = $('.ad').height();
+    if($(this).scrollTop()>=aTop){
+        console.log('header just passed.');
+        // instead of alert you can use to show your ad
+        // something like $('#footAd').slideup();
+    }
+  });
+});
 
 var rn = Math.floor((Math.random() * 150) + 60);
 var rs = Math.floor((Math.random() * 11) + 4);

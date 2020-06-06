@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Titillium+Web:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Titillium+Web:ital,wght@0,300;0,400;1,400&display=swap');
 
+
 * {
-  margin:none;
+  margin:0;
       box-sizing: border-box;
 }
 
@@ -101,6 +102,12 @@ html, body {
 }
 
 @media screen and (max-width: 767px) {
+
+  .main {
+    width:100% !important;
+    margin-left:0 !important;
+    margin-right:0 !important;
+  }
 
   .header a {
     display: none;
@@ -235,6 +242,8 @@ text-decoration:none;}
   padding-right: 6px;
   padding-left: 6px;;
 
+
+
 }
 
 
@@ -247,10 +256,12 @@ text-decoration:none;}
 }
 
 .main {
-  width:100%;
+  background-color: rgb(0, 131, 144);
+  width:94%;
+  margin-left: 3%;
+  margin-right: 3%;
   height:3000px;
   position:relative;
-  background-color: white;
   margin-top:95vh;
 }
 

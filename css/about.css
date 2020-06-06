@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.main {
+  background-color: white !important;
+  width: 100% !important;
+  margin-right: 0 !important;
+  margin-left:0 !important;
+}
+
+.sbttl {
+  color:black !important;
+}
+
+.sbttl2 {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top:4%;
+}
+
+li {
+  text-align: left;
+}
+
+.main {
+  height:auto !important;
+}
+
+footer {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      color:gray;
+}
+
+.active {
+  background-color: white !important;
+}
