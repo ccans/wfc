@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Titillium+Web:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Titillium+Web:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
+
+:root {
+  --sbbtl-txt-col: white;
+  --txt-col:black;
+}
+
+[page-theme=dark] {
+    --sbbtl-txt-col: black;
+    --txt-col:white;
+}
+
+.virus-img-cntnr {
+  width:100%;
+    z-index:1;
+    position:fixed;
+}
+
+.virus-img {
+
+  width:100%;
+    position:fixed;
+    top:0;
+    /* animation: mymove 10s infinite; */
+    top:-10%;
+}
+
+.OSH {
+    opacity:0;
+}
+
+.bogo {
+  height:32px;
+  width:auto;
+}
+
+.blurb-1, .blurb-2, .blurb-3, .blurb-4, .blurb-5, .blurb-6 {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 20px;
+    float:right;
+    color:grey;
+    margin-left:10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .img-top {
+    width:108%;
+    margin-left: -2px;
+  }
+
+  .virus-img {
+    width:100%;
+  }
+
+  .virus-img-cntnr {
+    width:100%;
+  }
+}
+
+@keyframes mymove {
+  0% {top: -44px}
+  50% {top: 0px;}
+  100% {top: -44px}
+}
+
+.img-elements-cntnr {
+  z-index:2;
+  position:fixed;
+  top:0px;
+  overflow: hidden;
+  width:100%;
+  height:100%;
+}
+
+
+
+.sbttl {
+
+  left: 25vw;
+
+  position: absolute;
+  top:15vh;
+
+  text-align:center;
+
+  margin-top: 0px;
+  margin-bottom:0px;
+
+  width:50vw;
+
+
+  font-family: 'Titillium Web', sans-serif;
+    color: var(--sbbtl-txt-col);
+    font-size: 35px;
+  backdrop-filter: blur(1px);
+}
+
+
+.header {
+  backdrop-filter: blur(8px);
+  /* background-color: var(--txt-col); */
+}
+
+.imp-btn {
+    font-family: 'Titillium Web', sans-serif;
+  position: absolute;
+  top:60vh;
+  left:42.5vw;
+  right:75vw;
+  width:15vw;
+
+}
+
+.imp-btn-1, .imp-btn-2, .imp-btn-3, .imp-btn-4, .imp-btn-5, .imp-btn-6 {
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom:20px;
+}
+
+.img-elements-scroll {
+    width:200%;
+    position: absolute;
+    top: 80vh;
+    left: 48vw;
+    right: 48vw;
+    width: 4vw;
+}
+
+#content {
+  width:100%;
+  display:flex;
+  margin-top:540px;
+  height:inherit;
+  position: relative;
+
+  background-color: var(--sbbtl-txt-col);
+
+  background-color: var(--header-background-color);
+
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  z-index:5;
+}
+
+#content-2, #content-3, #content-4, #content-5, #content-6, #content-7 {
+  width:100%;
+  display:flex;
+  margin-top:0px;
+    height:inherit;
+  position: relative;
+  margin-top: 200px;
+  background-color: var(--sbbtl-txt-col);
+
+  background-color: var(--header-background-color);
+
+  z-index:5;
+}
+#stuff-l {
+  flex-grow: 1;
+  position:relative;
+  background-color: var(--sbbtl-txt-col);
+  height:100%;
+  width:50%;
+}
+#stuff-r {
+  flex-grow: 1;
+  position:relative;
+  background-color: var(--sbbtl-txt-col);
+  width:50%;
+}
+
+
+#stuff-2-r {
+  flex-grow:1;
+  position:relative;
+  background-color: var(--sbbtl-txt-col);
+
+  width:50%;
+}
+
+#stuff-2-l {
+  flex-grow: 1;
+  position:relative;
+  background-color: var(--sbbtl-txt-col);
+  height:100%;
+  width: 50%;
+}
+
+
+
+.example_c {
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+b {
+
+  mix-blend-mode: difference;
+}
+.example_c:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+transition: all 0.4s ease 0s;
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    .virus-img {
+      left:-200px;
+    }
+
+    #content {
+      margin-top: 650px;
+    }
+
+    .imp-btn {
+      width:40vw;
+      left:30vw;
+      right:30vw;
+      font-size:3vw;
+    }
+
+    .virus-img {
+      transform: scale(1.25);
+    }
+}
+
+.stuff-txt {
+  width:50%;
+  text-align: center;
+}
+
+.txt-1, .txt-2, .txt-3, .txt-4, .txt-5 {
+  margin-bottom: 4px;
+  margin-left:10px;
+  margin-right: 10px;
+  font-family: 'Titillium Web', sans-serif;
+    color: var(--txt-col);
+    font-size: 45px;
+}
+
+body {
+  background-color: black;
+}
+a.mobile-navbar-l {
+  text-align-last: left;
+}

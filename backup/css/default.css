@@ -47,12 +47,32 @@ img {
   font-family: 'Raleway', sans-serif;
 }
 
-@media screen and (min-width: 767px) {
-  .logo2{
+@media screen and (min-width: 400px) {
+  .logo2 {
     width:100vw;
     margin-left:auto;
     margin-right: auto;
     height:auto;
+  }
+
+  img {
+    width:inherit;
+  }
+
+}
+
+html,body{
+  height:100%;
+  overflow-x:hidden;
+}
+
+@media screen and (max-width: 400px) {
+  .logo2 {
+    height:100vh;
+    margin-left:auto;
+    margin-right: auto;
+    width:578px;
+    /* z-index:0 */
   }
 
   img {

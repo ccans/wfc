@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+.logo {
+  width:100%;
+  height:auto;
+}
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width:160%;
+    height:auto;
+    margin-right:auto;
+    overflow:hidden;
+  }
+  .virus-img {
+    top:0% !important;
+    left:-33.8% !important;
+  }
+  .y1 {
+    align-self: flex-start;
+    height:300px;
+  }
+  .y2 {
+    align-self: center;
+    height:300px;
+  }
+  .y3 {
+    align-self: flex-end;
+    height:300px;
+  }
+  .yt-box {
+    display:block !important;
+    height:900px !important;
+  }
+  .main {
+    height:2900px !important;
+  }
+}
+
+.main {
+  z-index:5;
+  position:absolute;
+  background-color: black;
+  height:2000px;
+  /* top:100%; */
+  width:100%;
+}
+.title {
+  text-align:center;
+  color:gray;
+  font-family: 'Raleway', sans-serif;
+}
+
+.bogo2 {
+  opacity:0;
+}
+
+.space {
+  height:100px;
+}
+
+.space2 {
+  height:25px;
+}
+
+.yt-box {
+  height:300px;
+  display:flex;
+}
+
+.y1, .y2, .y3 {
+    flex-grow:1;
+}
+
+.frame{
+  height:100%;
+  width:100%;
+}
+
+.p1, .p3 {
+  background-color: white;
+  border-radius: 20px;
+  width:100%;
+  flex-grow:1;
+}
+
+.p2 {
+  background-color: white;
+  border-radius: 20px;
+  width:100%;
+  flex-grow:1;
+  margin-top: -20px;
+}
+
+.toptext {
+  padding-top:20px;
+  text-align:center;
+  width:100%;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.moneytext {
+  padding-top:50px;
+  display: flex;
+  text-align: center;
+}
+
+.gray {
+  color:grey;
+  width:auto;
+  margin-right:2%;
+  margin-right: none;
+  position:relative;
+
+}
+
+.cost {
+  width:100%;
+  font-size: 50px;
+  font-weight:600;
+      font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+}
+
+.container {
+  display:flex;
+}
+
+.p1cont, .p2cont, .p3cont {
+    flex-grow:1;
+}
+
+.features {
+  text-align:center;
+}
+
+.fade {
+  text-align:center;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+  color:#7f8588;
+}
+
+.paybtn {
+  margin-top:40px;
+  text-align:center;
+  margin-bottom:40px;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+  background-color:rgb(0, 162, 255);
+  width:60%;
+  font-size: 17px;
+    font-weight: 500;
+    color:white;
+    height:25px;
+    border-radius: 4px;
+  margin-left:20%;
+  margin-right:20%;
+  display:flex;
+}
+
+.word {
+  font-weight: 500;
+  align-self: center;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.features {
+  text-align: left;
+  margin-left:20%;
+}
+
+.feature {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  font-weight: 600;
+}
+
+#Pricing {
+  margin-bottom:45px;
+}
+
+.green {
+  color:green !important;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+label {
+  color:white;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+.form {
+  width:90%;
+  margin-right:5%;
+  margin-left:5%;
+  background: black;
+}
+
+/* DIRTY Responsive pricing table CSS */
+
+/*
+- make mobile switch sticky
+*/
+* {
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+   outline: 0;
+}
+body {
+  font-family:Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:14px;
+  padding:14px;
+}
+article {
+  width:100%;
+  max-width:1000px;
+  margin:0 auto;
+  position:relative;
+}
+ul {
+  display:flex;
+  top:0px;
+  z-index:10;
+  padding-bottom:14px;
+}
+li {
+  list-style:none;
+  flex:1;
+}
+li:last-child {
+  border-right:1px solid #DDD;
+}
+button {
+  width:100%;
+  border: 1px solid #DDD;
+  border-right:0;
+  border-top:0;
+  padding: 10px;
+  background:#FFF;
+  font-size:14px;
+  font-weight:bold;
+  height:60px;
+  color:#999
+}
+li.active button {
+  background:#F5F5F5;
+  color:#000;
+}
+table { border-collapse:collapse; table-layout:fixed; width:100%; }
+th { background:#F5F5F5; display:none; }
+td, th {
+  height:53px
+}
+td,th { border:1px solid #DDD; padding:10px; empty-cells:show; }
+td,th {
+  text-align:left;
+}
+td+td, th+th {
+  text-align:center;
+  display:none;
+}
+td.default {
+  display:table-cell;
+}
+.bg-purple {
+  border-top:3px solid #A32362;
+}
+.bg-blue {
+  border-top:3px solid #0097CF;
+}
+.sep {
+  color:black;
+  background:#F5F5F5;
+  font-weight:bold;
+}
+.txt-l { font-size:28px; font-weight:bold; }
+.txt-top { position:relative; top:-9px; left:-2px; }
+.tick { font-size:18px; color:#2CA01C; }
+.hide {
+  border:0;
+  background:none;
+}
+
+@media (min-width: 640px) {
+  ul {
+    display:none;
+  }
+  td,th {
+    display:table-cell !important;
+  }
+  td,th {
+    width: 330px;
+
+  }
+  td+td, th+th {
+    width: auto;
+  }
+}
+
+td {
+  color:white;
+}
