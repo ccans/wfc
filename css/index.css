@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Titillium+Web:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Montserrat&family=Titillium+Web:ital,wght@0,300;0,400;1,400&display=swap');
+
+* {
+  margin:none;
+      box-sizing: border-box;
+}
+
+:root {
+  --header-bg-col: #212654;
+  --header-txt-col: white;
+  --dropdown-bg-col: #212654;
+  --dropdown-txt-col:white;
+  --header-txt-col-hover: rgb(175, 175, 175);
+
+}
+
+[page-theme=dark] {
+  --header-bg-col: black;
+  --header-txt-col:rgba(225, 179, 130, 0.85);
+  --header-txt-col-hover: rgba(225, 179, 130, 1);
+  --dropdown-bg-col: black;
+  --dropdown-txt-col: white;
+}
+/* HEADER */
+
+html, body {
+    margin:0;
+    padding:0;
+    transition: all 0.2s ease-in-out;
+}
+
+.header {
+  z-index:40;
+  margin:0;
+  position:fixed;
+  top:0px;
+  display: flex;
+  width:100%;
+  height:44px;
+}
+
+.header a:hover {
+  color: var(--header-txt-col-hover);
+}
+
+.header a {
+    cursor:pointer;
+    flex-grow: 1;
+
+    text-align: center;
+    text-decoration: none;
+
+    padding: 12px;
+    line-height: 25px;
+
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+
+    transition: all 0.2s ease-in-out;
+
+
+    color: var(--header-txt-col);
+
+    transition: all 0.2s ease-in-out;
+}
+
+.icon {
+  height:24px;
+  width:auto;
+}
+
+.header a.mobile-navbar-l {
+  display:none;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  opacity: 0;
+  flex-grow:10;
+}
+
+.toggle-theme-asset {
+  transition: all 0.2s ease-in-out;
+}
+.toggle-theme-asset:before {
+  content: ' \25D1';
+}
+/* .toggle-theme-asset:hover:hover:before {
+  content: ' \25D1';
+  rotate: 180deg;
+} */
+
+/* MOBILE */
+
+.dropdown-content {
+  display:none;
+}
+
+@media screen and (max-width: 767px) {
+
+  .header a {
+    display: none;
+    height: 48px;
+  }
+
+      .expandable-l, .expandable-r {
+          display:block !important;
+      }
+
+      #stuff-2-r {
+      display:none !important;
+      flex-grow:0;
+    }
+
+      #stuff-r {
+      display:none !important;
+      flex-grow:0;
+    }
+
+
+    .logo {
+        /* display:block !important; */
+        text-align: center !important;
+    }
+    .header {
+        height:48px;
+    }
+
+    .sep {
+    colspan:2;
+  }
+
+    .mobile-navbar-l {
+      display:block !important;
+      float:left;
+      width: 50px;
+      margin:none;
+      flex-grow: 1;
+    }
+
+    .mobile-navbar-r {
+      display:block !important;
+      float:right;
+      text-align:right !important;
+      width: 50px;
+      margin:none;
+      flex-grow: 1;
+    }
+
+    .logo_expandable {
+      flex-grow:1;
+    }
+
+    .dropdown-navbar {
+      margin-top:48px;
+    }
+    .sbttl {
+      font-size: 25px !important;
+    }
+
+    .txt {
+      font-size: 30px !important;
+    }
+
+}
+
+.expandable-l {
+    display:none;
+}
+.dropdown-navbar {
+  top:0;
+  height:0;
+  width:100%;
+  z-index: 10;
+  position: fixed;
+  margin-top:44px;
+  background-color:var(--dropdown-bg-col);
+  color:var(--dropdown-txt-col);
+}
+
+.dropdown-content {
+  display: none;
+  color: var(--default-text);
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  height: 44px;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.dropdown-content:hover {
+  color: var(--header-txt-color-hover);
+}
+
+.active  a{
+  background-color: var(--header-bg-col) !important;
+}
+
+.dropdown a{
+
+    background-color: var(--header-bg-col) !important;
+
+}
+.a.mobile-navbar-l {
+  text-align-last: left !important;
+}
+a.mobile-navbar-l {
+  text-align-last: left;
+}
+
+.footer {
+  text-align:center;
+  text-decoration: none;
+  text-decoration-color: var(--header-txt-col);
+  position: relative;
+  z-index: 5;
+}
+
+.footer a {
+  font-size:20px;
+  color: var(--header-txt-col) !important;
+  font-family: 'Titillium Web', sans-serif;
+text-decoration:none;}
+
+.bogo {
+  height:32px;
+  width:auto;
+  padding-right: 6px;
+  padding-left: 6px;;
+
+}
+
+
+.green {
+  color:green !important;
+}
+
+.header {
+  /* background-color: white; */
+}
+
+.main {
+  width:100%;
+  height:3000px;
+  postion:relative;
+  background-color: white;
+  margin-top:90vh;
+}
