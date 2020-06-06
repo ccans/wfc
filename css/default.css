@@ -131,7 +131,8 @@ body{
 
 .sbttl2 {
   text-align: center;
-  /* margin-left:5px; */
+  margin-left:10vw;
+  margin-right:10vw;
   font-family: 'Quicksand', sans-serif;
   color: rgb(94, 94, 94);
   font-weight: 100;
