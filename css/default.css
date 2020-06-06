@@ -61,6 +61,7 @@ img {
 
   .logo2 img {
     width:100vw !important;
+    margin-top:10vh;
     height:auto;
   }
 
