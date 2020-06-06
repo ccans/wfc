@@ -249,7 +249,15 @@ text-decoration:none;}
 .main {
   width:100%;
   height:3000px;
-  postion:relative;
+  position:relative;
   background-color: white;
-  margin-top:90vh;
+  margin-top:95vh;
+}
+
+.horizontal-line {
+  margin-top:15px;
+}
+
+.space1 {
+  height: 10px;
 }
