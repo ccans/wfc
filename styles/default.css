@@ -174,7 +174,7 @@ html, body {
   top:0;
   height:0;
   width:100%;
-  z-index: 10;
+  z-index: 100;
   position: fixed;
   margin-top:44px;
   background-color:var(--dropdown-bg-col);
